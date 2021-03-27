@@ -56,7 +56,7 @@ You can convert your YouTube channel into a native Android app using Channelify.
 
 ## Configuration
 
-1. To use Channelify, you simply have to add your YouTube Data API key in the <a href="gradle.properties">gradle.properties</a> file. To learn how to get a YouTube Data API key, follow our detailed <a href="#documentation">documentaion here</a>.
+1. To use Channelify, you simply have to add your YouTube Data API key in the <a href="gradle.properties">gradle.properties</a> file. To learn how to get a YouTube Data API key, follow our detailed <a href="https://channelify.aculix.com/docs">documentaion here</a>.
 2. To change the default YouTube channel inside the app, just replace the YouTube channel ID in the <a href="app/src/main/res/values/strings.xml">strings.xml</a> file with your own.
 
 You can use <a href="https://commentpicker.com/youtube-channel-id.php">this site</a> to find your YouTube channel ID.
