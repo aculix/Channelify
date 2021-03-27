@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivThumbnailPlaylistItem"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/thumbnail_height"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@tools:sample/backgrounds/scenic" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvVideoCountPlaylistItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="52 Videos"
+            android:alpha="0.8"
+            android:textStyle="bold"
+            app:drawableTint="@color/whiteColor"
+            app:drawableStartCompat="@drawable/ic_playlists"
+            android:drawablePadding="8dp"
+            android:textColor="@color/whiteColor"
+            android:background="@drawable/bg_rounded_rect"
+            app:layout_constraintEnd_toEndOf="@+id/ivThumbnailPlaylistItem"
+            app:layout_constraintBottom_toBottomOf="@+id/ivThumbnailPlaylistItem"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNamePlaylistItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            android:maxLines="2"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivThumbnailPlaylistItem"
+            tools:text="Retro Tech Season 1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

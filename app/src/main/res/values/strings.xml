@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">Channelify</string>
+
+    <!-- App Related Info -->
+    <string name="channel_id">UCDECw2OgDesM3Cr-DWxT3HQ</string>
+    <string name="store_url">https://teespring.com/stores/the-engineers-cafe</string>
+    <string name="text_app_desc">Channelify is a native Android app, designed and developed by Aculix Technologies LLP to show the videos from a particular channel.</string>
+    <string name="text_website_url">https://aculix.com/</string>
+    <string name="text_google_play_developer_id">8784124228561333652</string>
+    <string name="text_google_play_developer_name">Aculix Technologies LLP</string>
+    <string name="text_instagram_user_name">aculix</string>
+    <string name="text_contact_email">contact@aculix.com</string>
+    <string name="text_app_feedback_email_subject">Feedback - Channelify</string>
+    <string name="text_tos_url">https://channelify.aculix.com/terms-of-service.html</string>
+    <string name="text_privacy_policy_url">https://channelify.aculix.com/privacy-policy.html</string>
+
+    <!-- Admob -->
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="main_banner_ad_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="comments_banner_ad_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="comment_replies_banner_ad_id">ca-app-pub-3940256099942544/6300978111</string>
+
+    <!-- Text -->
+    <string name="text_comments">Comments</string>
+    <string name="text_video_description">Published on %1$s \n\n%2$s</string>
+    <string name="text_playlist_published_date">Published on %1$s</string>
+    <string name="text_commenter_name_time">%1$s  \u2022  %2$s</string>
+    <string name="text_commenter_name_time_edited">%1$s  \u2022  %2$s (edited)</string>
+    <plurals name="text_playlist_video_count">
+        <item quantity="one">%1$d Video</item>
+        <item quantity="other">%1$d Videos</item>
+    </plurals>
+    <string name="text_share_playlist">Share Playlist</string>
+    <string name="text_playlist_share_url">https://www.youtube.com/playlist?list=%1$s</string>
+    <string name="text_share_video">Share Video</string>
+    <string name="text_video_share_url">https://youtu.be/%1$s</string>
+    <string name="text_youtube_channel_intent_url">https://www.youtube.com/channel/%1$s</string>
+    <string name="text_replies">Replies</string>
+    <string name="text_count_unavailable">-</string>
+    <string name="text_channel_join_date">Joined %1$s</string>
+    <string name="text_empty_favorites">No favorites yet. Tap on the heart icon while watching a video to add it to favorites.</string>
+    <string name="text_subscribers">Subscribers</string>
+    <string name="text_videos">Videos</string>
+    <string name="text_views">Views</string>
+    <string name="text_fetch_video_details_wait_msg">Please wait until the video details are fetched</string>
+    <string name="text_empty_comments">No comments found on this video</string>
+    <string name="text_empty_playlists">This channel doesn\'t have any playlists</string>
+
+    <!-- Button -->
+    <string name="btn_retry">Retry</string>
+    <plurals name="btn_view_replies">
+        <item quantity="one">View %1$d reply</item>
+        <item quantity="other">View %1$d replies</item>
+    </plurals>
+    <string name="btn_subscribe">Subscribe</string>
+
+    <!-- Error -->
+    <string name="error_fetch_videos">Unable to fetch videos from channel</string>
+    <string name="error_internet_connectivity">Please check your Internet connectivity and try again</string>
+    <string name="error_load_more_videos">Error loading more videos</string>
+    <string name="error_video_details">Error fetching video details. Please check your internet connectivity and try again.</string>
+    <string name="error_fetch_comments">Error fetching comments</string>
+    <string name="error_fetch_comment_replies">Error fetching comment replies</string>
+    <string name="error_fetch_playlists">Error fetching playlists</string>
+    <string name="error_search_empty_result_title">No results found</string>
+    <string name="error_search_empty_result_desc">Try searching using a different keyword</string>
+    <string name="error_channel_info">Error fetching channel info. Please try again.</string>
+
+    <!-- Menu -->
+    <string name="menu_home">Home</string>
+    <string name="menu_playlists">Playlists</string>
+    <string name="menu_favorites">Favorites</string>
+    <string name="menu_about">About</string>
+    <string name="menu_top_comments">Top Comments</string>
+    <string name="menu_newest_first_comments">Newest First</string>
+    <string name="menu_add_to_favorites">Add to favorites</string>
+    <string name="menu_pip">Start PIP mode</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_details">Details</string>
+    <string name="menu_search_videos">Search Videos</string>
+    <string name="menu_theme">Change Theme</string>
+    <string name="menu_rate_us">Rate app on Google Play</string>
+    <string name="menu_feedback">Send us a feedback</string>
+    <string name="menu_tos">Terms of Service</string>
+    <string name="menu_privacy_policy">Privacy Policy</string>
+
+    <!-- Dialog -->
+    <string name="dialog_theme_text_light">Light</string>
+    <string name="dialog_theme_text_dark">Dark</string>
+    <string name="dialog_theme_title">Choose Theme</string>
+    <string name="menu_store">Store</string>
+    <string name="menu_app_info">App Info</string>
+
+    <!-- Fragment -->
+    <string name="fragment_app_info">App Info</string>
+
+</resources>

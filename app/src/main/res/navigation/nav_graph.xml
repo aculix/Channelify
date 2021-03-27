@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="aculix.channelify.app.fragment.HomeFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playlistsFragment"
+        android:name="aculix.channelify.app.fragment.PlaylistsFragment"
+        android:label="fragment_playlists"
+        tools:layout="@layout/fragment_playlists" >
+        <action
+            android:id="@+id/action_playlistsFragment_to_playlistVideosFragment"
+            app:destination="@id/playlistVideosFragment" />
+        <action
+            android:id="@+id/action_playlistsFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="aculix.channelify.app.fragment.FavoritesFragment"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" >
+        <action
+            android:id="@+id/action_favoritesFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="aculix.channelify.app.fragment.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" >
+        <action
+            android:id="@+id/action_aboutFragment_to_appInfoFragment"
+            app:destination="@id/appInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playlistVideosFragment"
+        android:name="aculix.channelify.app.fragment.PlaylistVideosFragment"
+        android:label="{playlistName}"
+        tools:layout="@layout/fragment_playlist_videos">
+        <argument
+            android:name="playlistName"
+            app:argType="string" />
+        <argument
+            android:name="playlistId"
+            app:argType="string" />
+        <argument
+            android:name="playlistDesc"
+            app:argType="string" />
+        <argument android:name="playlistVideoCount"
+            app:argType="float" />
+        <argument
+            android:name="playlistThumbUrl"
+            app:argType="string" />
+        <argument
+            android:name="playlistPublishedTime"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="aculix.channelify.app.fragment.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/appInfoFragment"
+        android:name="aculix.channelify.app.fragment.AppInfoFragment"
+        android:label="@string/fragment_app_info"
+        tools:layout="@layout/fragment_app_info" />
+</navigation>

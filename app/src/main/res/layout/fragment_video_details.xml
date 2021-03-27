@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.VideoDetailsFragment">
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/groupErrorVideoDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="ivErrorVideoDetails,tvErrorVideoDetails,btnRetryVideoDetails" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/groupInfoVideoDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="tvVideoTitleVideoDetails,tvViewCountVideoDetails,tvLikeCountVideoDetails,tvDislikeCountVideoDetails,tvCommentCountVideoDetails,tvCommentsVideoDetails,viewTopDividerVideoDetails,viewBottomDividerVideoDetails,nsvVideoDetails" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivErrorVideoDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/tvErrorVideoDetails"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:srcCompat="@drawable/ic_error_video_details" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvErrorVideoDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/error_video_details"
+            android:textAlignment="center"
+            android:textColor="?android:attr/textColorSecondary"
+            app:layout_constraintBottom_toTopOf="@+id/btnRetryVideoDetails"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivErrorVideoDetails" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRetryVideoDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/btn_retry"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvErrorVideoDetails" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvVideoTitleVideoDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Razor Phone Impressions" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvViewCountVideoDetails"
+            style="@style/IconTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:drawableTopCompat="@drawable/ic_view_count"
+            app:layout_constraintEnd_toStartOf="@+id/tvLikeCountVideoDetails"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvVideoTitleVideoDetails"
+            tools:text="745K" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvLikeCountVideoDetails"
+            style="@style/IconTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:drawableTopCompat="@drawable/ic_like"
+            app:layout_constraintBottom_toBottomOf="@+id/tvViewCountVideoDetails"
+            app:layout_constraintEnd_toStartOf="@+id/tvDislikeCountVideoDetails"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvViewCountVideoDetails"
+            app:layout_constraintTop_toTopOf="@+id/tvViewCountVideoDetails"
+            tools:text="326" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvDislikeCountVideoDetails"
+            style="@style/IconTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:drawableTopCompat="@drawable/ic_dislike"
+            app:layout_constraintBottom_toBottomOf="@+id/tvLikeCountVideoDetails"
+            app:layout_constraintEnd_toStartOf="@+id/tvCommentCountVideoDetails"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvLikeCountVideoDetails"
+            app:layout_constraintTop_toTopOf="@+id/tvLikeCountVideoDetails"
+            tools:text="36" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvCommentCountVideoDetails"
+            style="@style/IconTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:drawableTopCompat="@drawable/ic_comment"
+            app:layout_constraintBottom_toBottomOf="@+id/tvDislikeCountVideoDetails"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvDislikeCountVideoDetails"
+            app:layout_constraintTop_toTopOf="@+id/tvDislikeCountVideoDetails"
+            tools:text="3K" />
+
+        <View
+            android:id="@+id/viewTopDividerVideoDetails"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/dividerColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvViewCountVideoDetails" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvCommentsVideoDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="16dp"
+            android:text="@string/text_comments"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textStyle="bold"
+            app:drawableEndCompat="@drawable/ic_unfold_more"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewTopDividerVideoDetails" />
+
+        <View
+            android:id="@+id/viewBottomDividerVideoDetails"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/dividerColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCommentsVideoDetails" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nsvVideoDetails"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clipToPadding="false"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="64dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewBottomDividerVideoDetails">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvVideoDescVideoDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textColorLink="@color/linkColor"
+                    tools:text="@tools:sample/lorem/random" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/ic_store"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/babVideoDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:hideOnScroll="true"
+        app:menu="@menu/bab_menu_video_details" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

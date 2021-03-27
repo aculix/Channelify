@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E57373</color>
+    <color name="colorPrimaryDark">#f44336</color>
+    <color name="colorSecondary">#e5ac73</color>
+
+    <color name="defaultBgColor">#121212</color>
+
+    <color name="dividerColor">#616161</color>
+    <color name="linkColor">#64B5F6</color>
+</resources>

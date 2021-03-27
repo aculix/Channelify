@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/miRateAppInfo"
+        android:icon="@drawable/ic_star"
+        android:title="@string/menu_rate_us"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction" />
+
+    <item
+        android:id="@+id/miFeedbackAppInfo"
+        android:icon="@drawable/ic_email"
+        android:title="@string/menu_feedback"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction" />
+
+    <item
+        android:id="@+id/miTosAppInfo"
+        android:icon="@drawable/ic_tos"
+        android:title="@string/menu_tos"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction" />
+
+    <item
+        android:id="@+id/miPrivacyPolicyAppInfo"
+        android:icon="@drawable/ic_privacy_policy"
+        android:title="@string/menu_privacy_policy"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction" />
+</menu>

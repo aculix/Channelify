@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/miStoreAbout"
+        android:icon="@drawable/ic_store"
+        android:title="@string/menu_store"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/miThemeAbout"
+        android:icon="@drawable/ic_theme_light"
+        android:title="@string/menu_theme"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/miAppInfoAbout"
+        android:icon="@drawable/ic_info"
+        android:title="@string/menu_app_info"
+        app:showAsAction="ifRoom" />
+
+</menu>

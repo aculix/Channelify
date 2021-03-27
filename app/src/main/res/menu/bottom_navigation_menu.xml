@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="@string/menu_home"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/playlistsFragment"
+        android:icon="@drawable/ic_playlists"
+        android:title="@string/menu_playlists"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction" />
+
+    <item android:id="@+id/favoritesFragment"
+        android:icon="@drawable/ic_favorite_border"
+        android:title="@string/menu_favorites"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/aboutFragment"
+        android:icon="@drawable/ic_about"
+        android:title="@string/menu_about"
+        app:showAsAction="always"/>
+
+</menu>

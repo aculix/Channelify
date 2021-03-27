@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/miDetailsPlaylistVideos"
+        android:icon="@drawable/ic_info"
+        android:title="@string/menu_details"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/miSharePlaylistVideos"
+        android:icon="@drawable/ic_share"
+        android:title="@string/menu_share"
+        app:showAsAction="ifRoom" />
+</menu>

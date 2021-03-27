@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Core</string>
+    <string name="text_no_email_app_found">No Email application installed on the device</string>
+</resources>

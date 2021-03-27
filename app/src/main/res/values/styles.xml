@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+
+        <!-- Window Decor -->
+        <item name="android:windowLightStatusBar" tools:targetApi="m">@bool/use_light_status_bar</item>
+        <item name="android:statusBarColor">@color/transparentColor</item>
+
+        <!-- Material Dialog -->
+        <item name="md_corner_radius">16dp</item>
+    </style>
+
+    <!-- Splash Screen Theme -->
+    <style name="SplashTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+
+    <!-- Toolbar -->
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar"/>
+
+    <!-- TextView -->
+    <style name="IconTextView" parent="@style/Widget.MaterialComponents.TextView">
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">4dp</item>
+    </style>
+
+    <!-- Button -->
+    <style name="VectorImageButton">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <!-- Progress Indicator -->
+    <style name="CircularProgressBar" parent="@style/Widget.AppCompat.ProgressBar"/>
+
+    </resources>

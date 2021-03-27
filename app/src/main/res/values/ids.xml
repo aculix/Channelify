@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="fastadapter_home_item_id" type="id"/>
+    <item name="fastadapter_comment_item_id" type="id" />
+    <item name="fastadapter_comment_reply_item_id" type="id" />
+    <item name="fastadapter_playlist_item_id" type="id" />
+    <item name="fastadapter_playlist_video_item_id" type="id" />
+    <item name="fastadapter_favorite_item_id" type="id" />
+    <item name="fastadapter_search_item_id" type="id" />
+    <item name="progress_indicator_item_id" type="id" />
+</resources>

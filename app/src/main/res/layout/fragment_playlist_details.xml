@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivThumbnailPlaylistDetails"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@tools:sample/avatars" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvNamePlaylistDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="24dp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivThumbnailPlaylistDetails"
+        app:layout_constraintTop_toTopOf="@+id/ivThumbnailPlaylistDetails"
+        tools:text="GOT Theme Songs" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvVideoCountPlaylistDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="?android:attr/textColorSecondary"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvNamePlaylistDetails"
+        app:layout_constraintTop_toBottomOf="@+id/tvNamePlaylistDetails"
+        tools:text="43 Videos" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvTimePublishedPlaylistDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/tvVideoCountPlaylistDetails"
+        app:layout_constraintTop_toBottomOf="@+id/tvVideoCountPlaylistDetails"
+        tools:text="Published on Jan 02,2020" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrierPlaylistDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="ivThumbnailPlaylistDetails,tvTimePublishedPlaylistDetails"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvDescPlaylistDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:textColor="?android:attr/textColorSecondary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barrierPlaylistDetails"
+        tools:text="A list of all the cover theme songs for the season Game of Thrones" />
+</androidx.constraintlayout.widget.ConstraintLayout>

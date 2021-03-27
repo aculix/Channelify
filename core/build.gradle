@@ -1,0 +1,48 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion COMPILE_SDK_VERSION
+
+    defaultConfig {
+        minSdkVersion MIN_SDK_VERSION
+        targetSdkVersion TARGET_SDK_VERSION
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    // Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
+
+    // AndroidX
+    implementation "androidx.constraintlayout:constraintlayout:$clVersion"
+
+    // Architecture Components
+    implementation "androidx.lifecycle:lifecycle-extensions:$archVersion"
+
+    // Material theme
+    implementation "com.google.android.material:material:$materialThemeVersion"
+
+    // Custom Tabs
+    implementation "saschpe.android:customtabs:$saschpeCustomTabs"
+    implementation "androidx.browser:browser:$browserVersion"
+}
+
+repositories {
+    mavenCentral()
+}

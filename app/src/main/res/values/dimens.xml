@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_text_size">16sp</dimen>
+    <dimen name="banner_ad_padding">72dp</dimen>
+
+    <dimen name="error_state_width">160dp</dimen>
+    <dimen name="error_state_height">111dp</dimen>
+
+    <dimen name="commenter_profile_photo_size">50dp</dimen>
+    <dimen name="comment_text_size">14sp</dimen>
+
+    <dimen name="toggle_button_size">24dp</dimen>
+    <dimen name="commenter_name_time_size">12sp</dimen>
+    <dimen name="thumbnail_height">200dp</dimen>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#D32F2F</color>
+    <color name="colorSecondary">#f29323</color>
+
+    <color name="whiteColor">#ffffff</color>
+    <color name="defaultBgColor">#ffffff</color>
+    <color name="transparentColor">#0fff</color>
+
+    <color name="splashBgColor">#121212</color>
+    <color name="dividerColor">#E0E0E0</color>
+    <color name="linkColor">#1e88e5</color>
+    <color name="playlistVideoCountBgColor">#212121</color>
+</resources>

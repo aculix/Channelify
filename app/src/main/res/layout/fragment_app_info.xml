@@ -1,0 +1,151 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarAppInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/defaultBgColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivLogoAppInfo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        tools:src="@drawable/logo_splash"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarAppInfo" />
+
+    <TextView
+        android:id="@+id/tvNameAppInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/app_name"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toEndOf="@+id/ivLogoAppInfo"
+        app:layout_constraintTop_toTopOf="@+id/ivLogoAppInfo" />
+
+    <TextView
+        android:id="@+id/tvDescAppInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/text_app_desc"
+        android:textColor="?android:attr/textColorSecondary"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/tvNameAppInfo"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameAppInfo" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvLinksAppInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="32dp"
+        app:layout_constraintStart_toStartOf="@id/tvDescAppInfo"
+        app:layout_constraintTop_toBottomOf="@id/tvDescAppInfo"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivWebsiteAppInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_website" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivGooglePlayAppInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="@id/ivWebsiteAppInfo"
+                app:layout_constraintStart_toEndOf="@id/ivWebsiteAppInfo"
+                app:layout_constraintTop_toTopOf="@id/ivWebsiteAppInfo"
+                app:srcCompat="@drawable/ic_google_play" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivInstagramAppInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="@id/ivGooglePlayAppInfo"
+                app:layout_constraintStart_toEndOf="@id/ivGooglePlayAppInfo"
+                app:layout_constraintTop_toTopOf="@id/ivGooglePlayAppInfo"
+                app:srcCompat="@drawable/ic_instagram" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivEmailAppInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="@id/ivInstagramAppInfo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ivInstagramAppInfo"
+                app:layout_constraintTop_toTopOf="@id/ivInstagramAppInfo"
+                app:srcCompat="@drawable/ic_email" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nvAppInfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        app:elevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvLinksAppInfo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingBottom="@dimen/banner_ad_padding"
+        android:clipToPadding="false"
+        app:menu="@menu/app_info_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

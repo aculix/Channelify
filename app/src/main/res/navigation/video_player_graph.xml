@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/video_player_graph"
+    app:startDestination="@id/videoDetailsFragment"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/commentsFragment"
+        android:name="aculix.channelify.app.fragment.CommentsFragment"
+        android:label="CommentsFragment"
+        tools:layout="@layout/fragment_comments">
+        <argument
+            android:name="videoId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_commentsFragment_to_commentRepliesFragment"
+            app:destination="@id/commentRepliesFragment"
+            app:enterAnim="@anim/slide_in_bottom"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/slide_out_bottom" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoDetailsFragment"
+        android:name="aculix.channelify.app.fragment.VideoDetailsFragment"
+        android:label="fragment_video_details"
+        tools:layout="@layout/fragment_video_details">
+        <argument
+            android:name="videoId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_videoDetailsFragment_to_commentsFragment"
+            app:destination="@id/commentsFragment"
+            app:enterAnim="@anim/slide_in_bottom"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/slide_out_bottom" />
+    </fragment>
+    <fragment
+        android:id="@+id/commentRepliesFragment"
+        android:name="aculix.channelify.app.fragment.CommentRepliesFragment"
+        android:label="Replies"
+        tools:layout="@layout/fragment_comment_replies" >
+        <argument
+            android:name="commentId"
+            app:argType="string" />
+    </fragment>
+</navigation>
