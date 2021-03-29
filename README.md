@@ -6,6 +6,10 @@
 
 <p align="center"><a href="http://links.aculix.com/channelify-github"><img src="https://channelify.aculix.com/media/google-play-badge.png" width="250"></a></p>
 
+<p align="center">
+<a href="https://androidweekly.net/issues/issue-459/" alt="Android Weekly"><img src="https://androidweekly.net/issues/issue-459/badge"></a>
+</p>
+
 <hr>
 <p align="center"><a href="#screenshots">Screenshots</a> &bull; <a href="#description">Description</a> &bull; <a href="#features">Features</a> &bull; <a href="#configuration">Configuration</a> &bull; <a href="#documentation">Documentation</a></p>
 <hr>
