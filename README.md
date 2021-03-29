@@ -8,6 +8,7 @@
 
 <p align="center">
 <a href="https://androidweekly.net/issues/issue-459/" alt="Android Weekly"><img src="https://androidweekly.net/issues/issue-459/badge"></a>
+<a href="https://github.com/aculix/Channelify/blob/master/LICENSE" alt="Android Weekly"><img src="https://img.shields.io/github/license/aculix/channelify?label=License"></a>
 </p>
 
 <hr>
