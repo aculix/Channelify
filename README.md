@@ -1,7 +1,7 @@
 <br>
 <br>
 
-<p align="center"><a href="#"><img src="https://channelify.aculix.com/wp-content/uploads/2019/12/channelify_logo.001.png" width="350"></a></p> 
+<p align="center"><a href="#"><img src="https://channelify.aculix.com/image/channelify-logo.png" width="350"></a></p> 
 <h4 align="center">Convert your YouTube channel into an app.</h4>
 
 <p align="center"><a href="http://links.aculix.com/channelify-github"><img src="https://channelify.aculix.com/media/google-play-badge.png" width="250"></a></p>
