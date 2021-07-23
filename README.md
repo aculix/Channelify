@@ -4,8 +4,6 @@
 <p align="center"><a href="#"><img src="https://channelify.aculix.com/image/channelify-logo.png" width="350"></a></p> 
 <h4 align="center">Convert your YouTube channel into an app.</h4>
 
-<p align="center"><a href="http://links.aculix.com/channelify-github"><img src="https://channelify.aculix.com/media/google-play-badge.png" width="250"></a></p>
-
 <p align="center">
 <a href="https://androidweekly.net/issues/issue-459/" alt="Android Weekly"><img src="https://androidweekly.net/issues/issue-459/badge"></a>
 <a href="https://github.com/aculix/Channelify/blob/master/LICENSE" alt="Android Weekly"><img src="https://img.shields.io/github/license/aculix/channelify?label=License"></a>
